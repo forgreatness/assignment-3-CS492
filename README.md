@@ -42,6 +42,7 @@ The settings of these preferences should affect the URL used to query the OpenWe
   * The units displayed in the forecast list and the forecast detail view.
   * The location displayed in the map when the corresponding action bar action is triggered.
   * The currently set forecast location in the text shared by the share action.
+
 All of these values are currently taken from the class `WeatherPreferences`.
 
 ## Extra credit

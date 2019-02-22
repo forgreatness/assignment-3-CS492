@@ -12,4 +12,21 @@
     <string name="forecast_item_wind">Wind: %1$d MPH %2$s</string>
     <string name="forecast_item_humidity">Humidity: %1$d%%</string>
     <string name="forecast_item_share_text">Forecast for %1$s, %2$s: %3$d%4$s - %5$s #CS492Weather</string>
+
+    <string name="pref_temp_units_key" translatable="false">pref_temp_units</string>
+    <string name="pref_temp_units_title">Temperature Units</string>
+    <string name="pref_temp_units_dialog">Temperature in</string>
+    <string name="pref_temp_units_fahrenheit_entry">F°</string>
+    <string name="pref_temp_units_fahrenheit_value" translatable="false">imperial</string>
+    <string name="pref_temp_units_celcius_entry">C°</string>
+    <string name="pref_temp_units_celcius_value" translatable="false">metric</string>
+    <string name="pref_temp_units_kelvin_entry">K°</string>
+    <string name="pref_temp_units_kelvin_value" translatable="false">kelvin</string>
+    <string name="pref_temp_units_default">@string/pref_temp_units_fahrenheit_value</string>
+    <string name="pref_temp_units_abbr_default">@string/pref_temp_units_fahrenheit_entry</string>
+
+    <string name="pref_location_key" translatable="false">pref_location</string>
+    <string name="pref_location_title">Location</string>
+    <string name="pref_location_default">Corvallis,US</string>
+
 </resources>

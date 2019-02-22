@@ -70,7 +70,7 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
             String dateString = DateFormat.getDateTimeInstance().format(forecastItem.dateTime);
             String detailString = mForecastTempDescriptionTV.getContext().getString(
                     R.string.forecast_item_details, forecastItem.temperature,
-                    WeatherPreferences.getDefaultTemperatureUnitsAbbr(), forecastItem.description
+                    WeatherPreferences.getTemperatureUnitsAbbr(), forecastItem.description
             );
             String iconURL = OpenWeatherMapUtils.buildIconURL(forecastItem.icon);
             mForecastDateTV.setText(dateString);

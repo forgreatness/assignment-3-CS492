@@ -26,7 +26,7 @@ public class OpenWeatherMapUtils {
     /*
      * Set your own APPID here.
      */
-    private final static String OWM_FORECAST_APPID = "ADD_YOUR_API_KEY_HERE";
+    private final static String OWM_FORECAST_APPID = "521b74e266c0a0fc0c280747d5848b82";
 
     /*
      * This class is used as a final representation of a single forecast item.  It condenses the

@@ -69,8 +69,8 @@ public class ForecastItemDetailActivity extends AppCompatActivity {
             String dateString = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT)
                     .format(mForecastItem.dateTime);
             String shareText = getString(R.string.forecast_item_share_text,
-                    WeatherPreferences.getDefaultForecastLocation(), dateString,
-                    mForecastItem.temperature, WeatherPreferences.getDefaultTemperatureUnitsAbbr(),
+                    WeatherPreferences.getLocation(), dateString,
+                    mForecastItem.temperature, WeatherPreferences.getTemperatureUnitsAbbr(),
                     mForecastItem.description);
             ShareCompat.IntentBuilder.from(this)
                     .setType("text/plain")
@@ -83,10 +83,10 @@ public class ForecastItemDetailActivity extends AppCompatActivity {
     private void fillInLayout(OpenWeatherMapUtils.ForecastItem forecastItem) {
         String dateString = DateFormat.getDateTimeInstance().format(forecastItem.dateTime);
         String detailString = getString(R.string.forecast_item_details, forecastItem.temperature,
-                WeatherPreferences.getDefaultTemperatureUnitsAbbr(), forecastItem.description);
+                WeatherPreferences.getTemperatureUnitsAbbr(), forecastItem.description);
         String lowHighTempString = getString(R.string.forecast_item_low_high_temp,
                 forecastItem.temperatureLow, forecastItem.temperatureHigh,
-                WeatherPreferences.getDefaultTemperatureUnitsAbbr());
+                WeatherPreferences.getTemperatureUnitsAbbr());
 
         String windString = getString(R.string.forecast_item_wind, forecastItem.windSpeed,
                 forecastItem.windDirection);

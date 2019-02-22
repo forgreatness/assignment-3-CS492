@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_temp_units_entries">
+        <item>@string/pref_temp_units_fahrenheit_entry</item>
+        <item>@string/pref_temp_units_celcius_entry</item>
+        <item>@string/pref_temp_units_kelvin_entry</item>
+    </string-array>
+
+    <string-array name="pref_temp_units_values">
+        <item>@string/pref_temp_units_fahrenheit_value</item>
+        <item>@string/pref_temp_units_celcius_value</item>
+        <item>@string/pref_temp_units_kelvin_value</item>
+    </string-array>
+</resources>

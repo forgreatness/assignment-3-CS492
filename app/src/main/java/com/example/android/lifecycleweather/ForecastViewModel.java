@@ -56,11 +56,12 @@ public class ForecastViewModel extends ViewModel {
     }
 
     public void updateURL(String url){
-        if(mURL != url){
+        if(!mURL.equals(url)){
+            Log.d(TAG, "updateURL: i dont get this at all");
             mURL = url;
             loadSearchResults();
         }else{
-            if(mSearchResultsJSON.getValue().isEmpty()){
+            if(mSearchResultsJSON.getValue() == ""){
                 loadSearchResults();
             }
         }
